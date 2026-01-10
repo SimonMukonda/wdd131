@@ -1,0 +1,53 @@
+    body {
+      margin: 0;
+
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #000;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      min-height: 300px;
+    }
+
+    main {
+      flex: 3;
+      background-color: #ccc;
+      padding: 20px;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+    }
