@@ -1,0 +1,35 @@
+/* Gallery grid for larger screens */
+@media (min-width: 780px) {
+    .res-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+    }
+
+    nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 530px) and (max-width: 779px) {
+
+
+    .res-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
