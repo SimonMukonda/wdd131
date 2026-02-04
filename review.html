@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation</title>
+  <meta name="description" content="Review">
+  <meta name="author" content="Simon Mukonda">
+  <link rel="stylesheet" href="styles/style.css">
+  <script> 
+    // Increment review counter
+    window.onload = function() {
+      let count = localStorage.getItem("reviewCount") || 0;
+      count++;
+      localStorage.setItem("reviewCount", count);
+      document.getElementById("counter").textContent = count;
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main>
+    <p>Your review has been submitted successfully.</p>
+    <p>Total Reviews Submitted: <strong id="counter">0</strong></p>
+    <a href="form.html">Submit Another Review</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Product Review Assignment</p>
+  </footer>
+</body>
+</html>
