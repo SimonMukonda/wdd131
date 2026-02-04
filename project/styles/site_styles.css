@@ -1,0 +1,61 @@
+:root{
+  --primary: #2D9CDB;
+  --secondary: #27AE60;
+  --bg: #F7FBFF;
+  --accent: #F2994A;
+  --text: #1f2a37;
+  --card-bg: #ffffff;
+  --radius: 10px;
+  --max-width: 980px;
+}
+*{box-sizing:border-box}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--max-width);margin:24px auto;padding:16px;}
+
+.site-header{background:linear-gradient(90deg, rgba(45,156,219,0.08), rgba(39,174,96,0.04));padding:20px;border-radius:var(--radius);margin:12px;}
+
+.logo{display:flex;align-items:center;gap:12px}
+
+.logo-mark{width:56px;height:56px;border-radius:8px;background:var(--primary);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Poppins',sans-serif}
+
+.logo-text{font-family:'Poppins',sans-serif;font-size:20px;color:var(--text)}
+
+.tagline{margin:8px 0 0 68px;color:#264653}
+
+.card{background:var(--card-bg);padding:16px;border-radius:8px;margin:16px 0;box-shadow:0 6px 18px rgba(20,30,40,0.04)}
+
+h1,h2,h3{font-family:'Poppins',sans-serif;color:var(--primary);margin:0 0 8px 0}
+p{line-height:1.5}
+.swatches{display:flex;flex-wrap:wrap;gap:12px}
+
+.swatch{display:flex;gap:8px;align-items:center;min-width:200px}
+
+.swatch-sample{width:64px;height:48px;border-radius:6px;border:1px solid rgba(0,0,0,0.06)}
+
+.swatch-meta{font-size:14px;color:#344054}
+.type-samples{display:flex;flex-direction:column;gap:8px}
+.sample-heading{font-size:18px;margin:0}
+.sample-body{margin:0}
+
+.code-sample{background:#0f1724;color:#e6eef6;padding:8px;border-radius:6px;font-family:'Roboto Mono',monospace;overflow:auto}
+.wireframe{border:2px dashed rgba(20,30,40,0.06);padding:12px;border-radius:8px;margin:8px 0}
+.wireframe.mobile .wf-row{border:1px solid rgba(30,40,50,0.06);padding:10px;margin:8px 0;border-radius:6px;background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.9))}
+.wireframe.desktop .wf-row{border:1px solid rgba(30,40,50,0.06);padding:12px;margin:10px 0;border-radius:6px;background:#fff}
+.wf-header{font-weight:600}
+
+.site-footer{text-align:center;padding:24px;color:#667085;font-size:14px}
+table.test-table{width:100%;border-collapse:collapse;margin-top:8px}
+
+table.test-table th, table.test-table td{border:1px solid rgba(20,30,40,0.06);padding:8px;text-align:left}
+
+.accent{color:var(--accent);font-weight:700}
+@media(min-width:900px){
+  .container{display:block;padding:24px}
+  .tagline{margin-left:86px}
+}

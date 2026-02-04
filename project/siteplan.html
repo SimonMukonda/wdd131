@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JustStartCoding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site_styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <div class="logo-mark" aria-hidden="true">JS</div>
+      <div class="logo-text">JustStartCoding</div>
+    </div>
+    <p class="tagline">Practice. Build. Learn — beginner-friendly coding practice and encouragement.</p>
+  </header>
+
+  <main class="container">
+    <section id="overview" class="card">
+      <h1>Site Plan: <span class="accent">JustStartCoding</span></h1>
+      <p><strong>Why this name?</strong> The name clearly communicates the mission: to help newcomers start coding without pressure for advanced knowledge. It's friendly, positive, and action-oriented.</p>
+    </section>
+
+    <section id="purpose" class="card">
+      <h2>Site Purpose</h2>
+      <p>JustStartCoding is a learning hub aimed at people who want to become programmers but feel intimidated by complex tutorials. The site focuses on short, consistent practice activities, bite-sized projects, and motivational content that demonstrates progress comes from practice, not perfection.</p>
+      <ul>
+        <li>Daily micro-challenges (5–20 minutes)</li>
+        <li>Beginner-friendly tutorials and projects</li>
+        <li>Simple trackers to record practice sessions</li>
+        <li>Community stories and encouragement (showcasing small wins)</li>
+        <li>Resources: cheat-sheets, glossaries, curated links</li>
+      </ul>
+    </section>
+
+    <section id="scenarios" class="card">
+      <h2>Scenarios (target audience questions)</h2>
+      <ol>
+        <li><strong>"I want to build a simple webpage but I don't know where to start."</strong><br/>Answer: Guided 10–20 minute step-by-step micro-projects (e.g., build-your-first-profile-page).</li>
+        <li><strong>"I get overwhelmed by long tutorials — how can I practice regularly?"</strong><br/>Answer: Daily 5-minute challenges, a streak tracker, and email or push reminders to build a habit.</li>
+        <li><strong>"Do I need advanced math or a CS degree to be a good programmer?"</strong><br/>Answer: No — the site emphasizes practical practice and problem decomposition, not advanced theory.</li>
+      </ol>
+    </section>
+
+    <section id="colors" class="card">
+      <h2>Color Schema</h2>
+      <p>Chosen colors are approachable, modern, and accessible.</p>
+      <div class="swatches">
+        <div class="swatch">
+          <div class="swatch-sample" style="background:var(--primary)"></div>
+          <div class="swatch-meta"><strong>Primary</strong><br>#2D9CDB<br>Use: headings, primary buttons, links</div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-sample" style="background:var(--secondary)"></div>
+          <div class="swatch-meta"><strong>Secondary</strong><br>#27AE60<br>Use: accents, success states, small CTA</div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-sample" style="background:var(--bg)"></div>
+          <div class="swatch-meta"><strong>Background</strong><br>#F7FBFF<br>Use: page background and cards</div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-sample" style="background:var(--accent)"></div>
+          <div class="swatch-meta"><strong>Accent</strong><br>#F2994A<br>Use: highlights, subtle emphasis</div>
+        </div>
+      </div>
+      <p><em>Note:</em> Contrast checks will be done in the Testing section to ensure legibility.</p>
+    </section>
+
+    <section id="typography" class="card">
+      <h2>Typography</h2>
+      <p>Fonts selected from Google Fonts:</p>
+      <ul>
+        <li><strong>Poppins</strong> (Headings — bold, friendly)</li>
+        <li><strong>Inter</strong> (Body copy — readable at small sizes)</li>
+        <li><strong>Roboto Mono</strong> (Code snippets and inline examples)</li>
+      </ul>
+      <p>Usage examples:</p>
+      <div class="type-samples">
+        <div><h3 class="sample-heading">Heading: Poppins 700</h3></div>
+        <div><p class="sample-body">Body: Inter 400 — This is sample body text showing line length and spacing.</p></div>
+        <div><pre class="code-sample">Code: console.log('just start');</pre></div>
+      </div>
+    </section>
+
+    <section id="wireframes" class="card">
+      <h2>Wireframes</h2>
+      
+
+      <h3>Mobile (narrow)</h3>
+      <div class="wireframe mobile" aria-hidden="true">
+        <div class="wf-row wf-header">Logo | Menu</div>
+        <div class="wf-row wf-hero">Hero: Headline + CTA ("Start a 5-minute challenge")</div>
+        <div class="wf-row wf-cards">Micro-challenge cards (stacked)</div>
+        <div class="wf-row wf-tracker">Streak / Quick stats</div>
+        <div class="wf-row wf-footer">Footer (links, about)</div>
+      </div>
+
+      <h3>Desktop (wide)</h3>
+      <div class="wireframe desktop" aria-hidden="true">
+        <div class="wf-row wf-topnav">Logo — Nav — Login</div>
+        <div class="wf-row wf-hero-two">Hero (left): Headline + CTA — (right): Illustration / code sample</div>
+        <div class="wf-row wf-features">Feature grid: Challenges | Tutorials | Stories</div>
+        <div class="wf-row wf-community">User Stories / Testimonials</div>
+        <div class="wf-row wf-footer">Footer with resources and contact</div>
+      </div>
+
+      <p><small><a href="https://docs.google.com/drawings/d/1EGpbLreXJ7ZRcAdAqvsbknbHDvNoyiSKyUL2KX3CZYg/edit?usp=sharing">Wireframes</a></small></p>
+    </section>
+
+    <section id="css" class="card">
+      <h2>CSS & Styling Notes</h2>
+      <p>File: <code>styles.css</code> — Use CSS variables for easy theme changes. Mobile-first responsive design. Keep components small and reusable: <code>.card</code>, <code>.btn-primary</code>, <code>.challenge-card</code>.</p>
+      <p>Accessibility helpers: ensure focus styles on interactive elements, prefer semantic HTML for navigation and main content.</p>
+    </section>
+
+    <section id="testing" class="card">
+      <h2>Testing & Self-Check</h2>
+      <p>Planned validation and checks before submission:</p>
+      <ul>
+        <li>HTML validation via W3C Validator (w3.org/validator)</li>
+        <li>CSS validation via W3C CSS Validator</li>
+        <li>Accessibility checks: Lighthouse, WAVE, axe — ensure contrast, alt text, logical heading order</li>
+        <li>Performance & SEO: Lighthouse (mobile/desktop), PageSpeed Insights</li>
+        <li>Mobile-friendly: manual testing on narrow viewports and Chrome DevTools device toolbar</li>
+        <li>Cross-browser spot-checks: Chrome, Edge, Firefox (major modern browsers)</li>
+      </ul>
+      <p><strong>Self-check table:</strong></p>
+      <table class="test-table">
+        <tr><th>Item</th><th>Status</th><th>Notes</th></tr>
+        <tr><td>HTML valid</td><td>☐</td><td></td></tr>
+        <tr><td>CSS valid</td><td>☐</td><td></td></tr>
+        <tr><td>Color contrast</td><td>☐</td><td></td></tr>
+        <tr><td>Responsive layout</td><td>☐</td><td></td></tr>
+        <tr><td>Accessibility basics</td><td>☐</td><td></td></tr>
+      </table>
+    </section>
+
+    <section id="next-steps" class="card">
+      <h2>Next Steps</h2>
+      <ol>
+        <li>Create working HTML/CSS prototype for the Home page using this wireframe and style guide.</li>
+        <li>Implement one micro-challenge and the tracker (local storage) as the first interactive feature.</li>
+        <li>Test for accessibility and responsiveness; iterate.</li>
+        <li>Add 5–10 beginner micro-challenges with short instructions.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Prepared by: JustStartCoding — Website planning document (Week 05)</p>
+  </footer>
+</body>
+</html>

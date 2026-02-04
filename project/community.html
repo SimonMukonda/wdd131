@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fear of Coding — Community</title>
+  <meta name="author" content="Simon Mukonda">
+  <meta name="description" content="Practical guidance to overcome the fear of learning to code." />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">Fear of Coding</h1>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="growth.html">Growth</a>
+      <a href="community.html">Community</a>
+      <a href="references.html">References</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Creating a Supportive Learning Environment</h2>
+      <p>Mentorship, peer learning, and inclusive spaces help learners persist.</p>
+
+      <h3>Resources</h3>
+      <ul id="resources-list"></ul>
+
+      <h3>Contact / Join</h3>
+      <form id="contact-form" novalidate>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Why do you want to learn to code?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <div id="form-result" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Fear of Coding — Built by Simon Mukonda. <a href="references.html">References</a></p>
+  </div>
+</footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

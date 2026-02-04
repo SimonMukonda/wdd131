@@ -1,0 +1,12 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400' role='img' aria-label='Stepping stones illustration'>
+  <rect width='100%' height='100%' fill='#ffffff'/>
+  <g fill='none' stroke='#c7d2fe' stroke-width='18' stroke-linecap='round'>
+    <path d='M40 320 C160 220, 300 260, 420 180 S700 100,760 160' />
+  </g>
+  <g fill='#e0e7ff' stroke='#1e40af' stroke-width='4'>
+    <ellipse cx='120' cy='300' rx='80' ry='28'/>
+    <ellipse cx='300' cy='260' rx='80' ry='28'/>
+    <ellipse cx='480' cy='200' rx='80' ry='28'/>
+  </g>
+  <text x='40' y='50' font-size='20' fill='#0f172a'>Step by step — small wins</text>
+</svg>
